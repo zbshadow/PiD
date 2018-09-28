@@ -18,23 +18,7 @@ if(isServer) then {
 	{
 		_x addAction ["Raise Targets","PiD\raiseTargets.sqf", nil, 1.5, true, false];
 		_x addAction ["Lower Targets","PiD\lowerTargets.sqf", nil, 1.5, true, false];
+		_x addAction ["Random Targets","PiD\randomTargets.sqf", nil, 1.5, true, false];
 	} forEach _controler;
 };
-
-
-
-//create an array, targets, that contains all targets for the script
-
-
-//set those targets basic states 
-	//animation to be up
-	//when hit
-	//set animation to down
-	// stay down
-
-	
-//define controller item
-//add action to reset targets
-//add action to start random target activation
-//add action to sequentially 
 

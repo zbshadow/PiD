@@ -20,8 +20,8 @@ if (_currentShootHouse in sController ) then {
 	{
 		_x animate ["Terc",0]; //targets come up
 		_x addEventHandler ["HIT", { //adding eventhandler to make targets stay down
-		(_this select 0) animate ["Terc",1];
-		(_this select 0) RemoveEventHandler ["HIT",0];
+		(_this select 0) animate ["Terc",1]; //sets target down
+		(_this select 0) RemoveEventHandler ["HIT",0]; //remove the event handler for HIT
 		}];
 	}forEach _targets; //sets all targets up
 	systemChat "All targets raised." //debug to chat.
