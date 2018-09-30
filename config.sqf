@@ -5,7 +5,7 @@ Last Updated: 9/26/2018
 Purpose: Setup all objects in game to work with PiD shout house script system
 */
 //Add this line to the init.sqf
-//execVM execVM "PiD\config.sqf";
+//execVM "PiD\config.sqf";
 
 //shoothouse 1
 sController = [c1,c2]; //put the variable name of every object you want to control the shoothouse

@@ -19,6 +19,10 @@ if(isServer) then {
 		_x addAction ["Raise Targets","PiD\raiseTargets.sqf", nil, 1.5, true, false];
 		_x addAction ["Lower Targets","PiD\lowerTargets.sqf", nil, 1.5, true, false];
 		_x addAction ["Random Targets","PiD\randomTargets.sqf", nil, 1.5, true, false];
+		
+		[_x,["Raise Targets","PiD\raiseTargets.sqf",[_x]]] remoteExec ["addAction", -2, true];
+		[_x,["Lower Targets","PiD\lowerTargets.sqf",[_x]]] remoteExec ["addAction", -2, true];
+		[_x,["Random Targets","PiD\randomTargets.sqf",[_x]]] remoteExec ["addAction", -2, true];
 	} forEach _controler;
 };
 
