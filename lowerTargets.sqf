@@ -1,7 +1,7 @@
 /*
 Lower Targets script
 Author: zbshadow
-Last Updated: 9/26/2018
+Last Updated: 9/30/2018
 Purpose: Lower the targets for the PiD shoot house script system
 */
 _currentShootHouse = _this select 0;

@@ -1,7 +1,7 @@
 /*
 Pid main
 Author: zbshadow
-Last Updated: 9/26/2018
+Last Updated: 9/30/2018
 Purpose: Main script of PiD shoot house script set
 */
 
@@ -19,6 +19,7 @@ if(isServer) then {
 		_x addAction ["Raise Targets","PiD\raiseTargets.sqf", nil, 1.5, true, false];
 		_x addAction ["Lower Targets","PiD\lowerTargets.sqf", nil, 1.5, true, false];
 		_x addAction ["Random Targets","PiD\randomTargets.sqf", nil, 1.5, true, false];
+		_x addAction ["Sequential Targets","PiD\SequentialTargets.sqf", nil, 1.5, true, false];
 		
 		[_x,["Raise Targets","PiD\raiseTargets.sqf",[_x]]] remoteExec ["addAction", -2, true];
 		[_x,["Lower Targets","PiD\lowerTargets.sqf",[_x]]] remoteExec ["addAction", -2, true];
